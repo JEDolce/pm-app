@@ -10,7 +10,6 @@ export default function Clients() {
     if (loading) return <Spinner />;
     if (error) return <p>Something went wrong</p>;
 
-
     return (!loading && !error && (
         <table className='table table-hover mt-3'>
             <thead>
