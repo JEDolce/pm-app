@@ -10,7 +10,7 @@ export default function DeleteProject({ projectId }) {
 
     const [deleteProject] = useMutation(DELETE_PROJECT, {
         variables: { id: projectId },
-        onCompleted: navigate('/'),
+        onCompleted: () => navigate('/'),
         refetchQueries: [{ query: GET_PROJECTS }]
     });
 
